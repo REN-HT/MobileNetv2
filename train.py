@@ -9,8 +9,8 @@ from model.mobileNetv2 import mobileNetv2
 
 def train():
     net = mobileNetv2()
-    state_dic=torch.load('C:/AllProgram/Pytorch/MobileNetv2/model_weight.pth')
-    net.load_state_dict(state_dic)
+#     state_dic=torch.load('C:/AllProgram/Pytorch/MobileNetv2/model_weight.pth')
+#     net.load_state_dict(state_dic)
     if opt.use_gpu:
         net=net.cuda()
     train_data = DogCat(opt.train_root, train=True)
