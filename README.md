@@ -1,2 +1,2 @@
 # MobileNetv2  
-image classification
+image classification(DogVsCat)
