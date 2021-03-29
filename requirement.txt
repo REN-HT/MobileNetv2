@@ -1,0 +1,3 @@
+torch1.2.0
+torchvision0.4.0
+tqdm4.45.0
