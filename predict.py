@@ -6,10 +6,10 @@ from model.mobileNetv2 import mobileNetv2
 
 def predict():
     model=mobileNetv2()
-    model_state_dict=torch.load('C:/AllProgram/Pytorch/MobileNetv2/model_weight.pth')
+    model_state_dict=torch.load('your_model.pth')
     model.load_state_dict(model_state_dict)
 
-    path='C:/AllProgram/DatasetPath/kaggle/test1/188.jpg'
+    path='your_path'
     img=Image.open(path)
     transform=T.Compose([
                          T.Resize(224),
